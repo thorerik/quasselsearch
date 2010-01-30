@@ -1,0 +1,70 @@
+<?php
+//
+// config-file for Quassel Backlog Search
+//      developed 2009 by m4yer <m4yer@minad.de> under a Creative Commons Licence by-nc-sa 3.0
+//
+
+//
+// choose backend postgresql or sqlite (simple remove and/or add #)
+//
+
+$backend = "postgresql";    // php-version with PostgreSQL Support (pgsql) required
+#$backend = "sqlite";   // php-version with PDO Driver for SQLite 3.x required
+
+//
+//  timezone
+//  Difference to Greenwich time (GMT) in hours
+//  Example: +0100 = MET
+//  summertime will be choosen automaticly by the server.
+//
+
+$timezone = "+0100";
+
+//
+// language
+// see supported languages in i18n/
+// Default: en_US
+//
+
+$language = "en_US";
+
+//
+// dateformat
+// for help see: http://php.net/manual/en/function.date.php#format
+//
+
+$dateformat = "d.m.y H:i:s";
+
+//
+// postgresql data; (just examples, please edit)
+// needed if backend postgresql
+//
+
+$host = "localhost";
+$port = "5432";
+$user = "quassel";
+$password = "somepassword";
+$dbname = "quassel";
+ 
+ 
+//
+// path to quassel-storage.sqlite; (just examples, please edit)
+// needed if backend sqlite
+//
+// Info: must be browsable with php (within the web-path) and readable! (tipp: links should also work)
+//
+
+$sqlitedb = "/path/to/quassel-storage.sqlite";
+
+
+//
+//  debug (pro only)
+//
+//
+//  enable debuger, if errors occure to get full php-error-output; for normal users default-error-handling should do it
+//  throws out lots of messages and also logs error. just for testing not for use!
+//
+
+$debug = "release"; // set to "debug" to enable debuging-class
+
+?>
