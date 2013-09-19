@@ -7,13 +7,13 @@
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Style-Type" content="text/css">
-    <link rel="shortcut icon" href="style/bluemarine_favicon_0.png" type="image/x-icon">
+    <link rel="shortcut icon" href="styles/bluemarine_favicon_0.png" type="image/x-icon">
     <title><?=_('Quassel Backlog Search')?></title>
     <base target="_self">
-    <link rel="stylesheet" href="style/style.css" media="screen,projection" type="text/css">
-    <script type="text/javascript" src="style/prototype.js"></script>
-    <script type="text/javascript" src="style/scriptaculous.js?load=effects,builder"></script>
-    <script type="text/javascript" src="style/script.js"></script>
+    <link rel="stylesheet" href="styles/style.css" media="screen,projection" type="text/css">
+    <script type="text/javascript" src="scripts/prototype.js"></script>
+    <script type="text/javascript" src="scripts/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
   </head>
   <body onload="document.getElementById('input').focus();loadconf();">
     <div id="bodyid">

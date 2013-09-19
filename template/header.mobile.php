@@ -10,13 +10,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Style-Type" content="text/css">
     <!-- mobile header -->
-    <link rel="shortcut icon" href="style/bluemarine_favicon_0.png" type="image/x-icon">
+    <link rel="shortcut icon" href="styles/bluemarine_favicon_0.png" type="image/x-icon">
     <title>Quassel Backlog Search</title>
     <base target="_self">
-    <link rel="stylesheet" href="style/style.mobile.css" type="text/css">
-    <script type="text/javascript" src="style/prototype.js"></script>
-    <script type="text/javascript" src="style/scriptaculous.js?load=effects,builder"></script>
-    <script type="text/javascript" src="style/script.js"></script>
+    <link rel="stylesheet" href="styles/style.mobile.css" type="text/css">
+    <script type="text/javascript" src="scripts/prototype.js"></script>
+    <script type="text/javascript" src="scripts/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
   </head>
   <body onload="document.getElementById('input').focus();">
     <div id="bodyid">
