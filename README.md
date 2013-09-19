@@ -1,0 +1,3 @@
+Quassel Search
+==============
+
