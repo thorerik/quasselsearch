@@ -16,17 +16,33 @@
     $messageid = $_REQUEST['messageid'];
     $types = $_REQUEST['types'];
     $sorting = $_REQUEST['sorting'];
-    if($sorting == 1){
-        $down = 'up';
-        $up = 'down';
-        }else{
-            $down = 'down';
-            $up = 'up';
-            }
+    if($sorting == 1)
+    {
+      $down = 'up';
+      $up = 'down';
+    }
+    else
+    {
+      $down = 'down';
+      $up = 'up';
+    }
 ?>
-<div style="margin:5px;"><a title="<?=_('hide context')?>" href="javascript:close_more(<?=$messageid?>)">#</a> <?php
-echo $backend ->buffername($bufferid);?><br><a href="javascript:moreup('<?=$messageid?>','<?=$bufferid?>','<?=$up?>','<?=$types?>','<?=$sorting?>')"><img style="float:left;" src="style/format-text-direction-rtl.png"> <?=_('more')?></a><div style="clear:left;" id="wantmore<?=$messageid?>"><?
-
-echo $backend ->moreinfo($bufferid,$messageid,$types,$sorting);
-
-?></div><a href="javascript:moredown('<?=$messageid?>','<?=$bufferid?>','<?=$down?>','<?=$types?>','<?=$sorting?>')"><img style="float:left;" src="style/format-text-direction-ltr.png"> <?=_('more')?></a><div style="clear:left;" id="wantmore<?=$messageid?>"></div>
+<div style="margin:5px;">
+  <a title="<?=_('hide context')?>" href="javascript:close_more(<?=$messageid?>)">#</a>
+  <?php
+    echo $backend ->buffername($bufferid);
+  ?>
+  <br>
+  <a href="javascript:moreup('<?=$messageid?>','<?=$bufferid?>','<?=$up?>','<?=$types?>','<?=$sorting?>')">
+    <img style="float:left;" src="style/format-text-direction-rtl.png"> <?=_('more')?>
+  </a>
+  <div style="clear:left;" id="wantmore<?=$messageid?>">
+    <?php
+      echo $backend ->moreinfo($bufferid,$messageid,$types,$sorting);
+    ?>
+  </div>
+  <a href="javascript:moredown('<?=$messageid?>','<?=$bufferid?>','<?=$down?>','<?=$types?>','<?=$sorting?>')">
+    <img style="float:left;" src="style/format-text-direction-ltr.png"> <?=_('more')?>
+  </a>
+  <div style="clear:left;" id="wantmore<?=$messageid?>">
+  </div>
