@@ -46,11 +46,14 @@ ob_start();
 //
 
 // mobile header
-if($mobile){
-    include_once('style/header.mobile.php');
-    }else{
-        include_once('style/header.php');
-        }
+if($mobile)
+{
+    include_once('template/header.mobile.php');
+}
+else
+{
+    include_once('template/header.php');
+}
 
 
 // active session or login-try or none?
@@ -67,11 +70,14 @@ if(isset($_SESSION['pwdn']) OR !empty($_SESSION['pwdn'])){
                     }
 
 // mobile footer
-if($mobile){
-    include_once('style/footer.mobile.php');
-    }else{
-        include_once('style/footer.php');
-        }
+if($mobile)
+{
+    include_once('template/footer.mobile.php');
+}
+else
+{
+    include_once('template/footer.php');
+}
 
 // now show design       
 ob_end_flush(); 
