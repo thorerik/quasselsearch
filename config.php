@@ -54,7 +54,7 @@ $dbname = "quassel";
 // Info: must be browsable with php (within the web-path) and readable! (tipp: links should also work)
 //
 
-$sqlitedb = ".git/quassel-storage.sqlite";
+$sqlitedb = "./quassel-storage.sqlite";
 
 
 //
