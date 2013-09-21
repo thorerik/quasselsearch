@@ -8,8 +8,8 @@
 // choose backend postgresql or sqlite (simple remove and/or add #)
 //
 
-$backend = "postgresql";    // php-version with PostgreSQL Support (pgsql) required
-#$backend = "sqlite";   // php-version with PDO Driver for SQLite 3.x required
+#$backend = "postgresql";    // php-version with PostgreSQL Support (pgsql) required
+$backend = "sqlite";   // php-version with PDO Driver for SQLite 3.x required
 
 //
 //  timezone
@@ -25,7 +25,7 @@ $timezone = "+0100";
 // see supported languages in locale/
 //
 
-$language = "de_DE";
+$language = "en_US";
 
 
 //
