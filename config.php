@@ -65,6 +65,6 @@ $sqlitedb = "./quassel-storage.sqlite";
 //  throws out lots of messages and also logs error. just for testing not for use!
 //
 
-$debug = "release"; // set to "debug" to enable debuging-class
+$debug = "debug"; // set to "debug" to enable debuging-class
 
 ?>
