@@ -31,24 +31,24 @@ require_once('classes/gettext.class.php');
         <select  title="<?=_('Chat to search'); ?>" style="float:left;position:relative;z-index:99;" id="buffer" name="buffername" size="1">
         <?php
 
-          require("config.php");
-          require_once('classes/'.$backend.'.class.php');
-          $backendclass=new backend();
-          $array = $backendclass->bufferids($userid);
-          $i = NULL;
-          foreach($array as $string)
+        require("config.php");
+        require_once('classes/'.$backend.'.class.php');
+        $backendclass=new backend();
+        $array = $backendclass->bufferids($userid);
+        $i = NULL;
+        foreach($array as $string)
+        {
+          $array2 = explode('||',$string);
+          if(!empty($array2[0]))
           {
-            $array2 = explode('||',$string);
-            if(!empty($array2[0]))
+            if($i != $array2[2])
             {
-              if($i != $array2[2])
-              {
-                echo '<optgroup label="'.$backendclass->networkname($array2[2]).'">';
-              }
-              echo '<option value="'.$array2[1].'">'.$array2[0].'</option>';
-              $i = $array2[2];    
+              echo '<optgroup label="'.$backendclass->networkname($array2[2]).'">';
             }
+            echo '<option value="'.$array2[1].'">'.$array2[0].'</option>';
+            $i = $array2[2];    
           }
+        }
         ?>
         </select><label for="number"><img src="style/lines.png" title="<?=_('Number of results'); ?>" alt="Lines" style="margin:2px; margin-left:20px;float:left;"></label>
         <input name="number" title="<?=_('Number of results'); ?>" value="50" id="number" size="3" type="text" maxlength="4" style="text-align:right" autocomplete="off" />

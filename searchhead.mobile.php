@@ -13,20 +13,23 @@
         <select title="Chat to search" id="buffer" name="buffername" size="1">
         <?php
 
-            require("config.php");
-            require_once('classes/'.$backend.'.class.php');
-            $backendclass=new backend();
-            $array = $backendclass->bufferids($userid);
+        require("config.php");
+        require_once('classes/'.$backend.'.class.php');
+        $backendclass=new backend();
+        $array = $backendclass->bufferids($userid);
         $i = NULL;
         foreach($array as $string){
-        $array2 = explode('||',$string);
-        if(!empty($array2[0])){
-           if($i != $array2[2]){
-            echo '<optgroup label="'.$backendclass->networkname($array2[2]).'">';
+          $array2 = explode('||',$string);
+          if(!empty($array2[0]))
+          {
+            if($i != $array2[2])
+            {
+              echo '<optgroup label="'.$backendclass->networkname($array2[2]).'">';
             }
-           echo '<option value="'.$array2[1].'">'.$array2[0].'</option>';
-           $i = $array2[2];    
-           }}
+            echo '<option value="'.$array2[1].'">'.$array2[0].'</option>';
+            $i = $array2[2];    
+          }
+        }
 
         ?>
         </select>&nbsp;&nbsp;<input type="submit" value="Search!" class="button">
