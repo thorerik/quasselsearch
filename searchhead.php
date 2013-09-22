@@ -9,9 +9,9 @@ require_once('classes/gettext.class.php');
     <a href="javascript:Request('scontent','about.php');"><?=_('about'); ?></a>
   </span>
   <span id="load" style="display:none;position:absolute; top:5px;left:5px;z-index:99">
-    <img src="style/loading.gif" style="border:1px solid black;">
+    <img src="styles/loading.gif" style="border:1px solid black;">
   </span>
-  <img style="position:relative;float:left;margin:10px;margin-bottom:-20px; margin-right:60px;" alt="" src="style/quassel.png">
+  <img style="position:relative;float:left;margin:10px;margin-bottom:-20px; margin-right:60px;" alt="" src="styles/quassel.png">
   <div style="overflow:none; float:left; ">
     <form onsubmit="javascript:such(); return false" action="#">
       <div style="padding: 20px; float:left; ">
@@ -21,7 +21,7 @@ require_once('classes/gettext.class.php');
         <input value="" id="input" size="60" type="text">&nbsp;<input type="submit" value="<?=_('Start searching!'); ?>" class="button" >
         <br />
         <label for="buffername">
-          <img src="style/channel.png" style="z-index:1;position:relative;margin:2px;float:left;" alt="Buffer" title="<?=_('Buffer to search'); ?>">
+          <img src="styles/channel.png" style="z-index:1;position:relative;margin:2px;float:left;" alt="Buffer" title="<?=_('Buffer to search'); ?>">
         </label>
         <script type="text/javascript">
             <!--
@@ -50,7 +50,7 @@ require_once('classes/gettext.class.php');
           }
         }
         ?>
-        </select><label for="number"><img src="style/lines.png" title="<?=_('Number of results'); ?>" alt="Lines" style="margin:2px; margin-left:20px;float:left;"></label>
+        </select><label for="number"><img src="styles/lines.png" title="<?=_('Number of results'); ?>" alt="Lines" style="margin:2px; margin-left:20px;float:left;"></label>
         <input name="number" title="<?=_('Number of results'); ?>" value="50" id="number" size="3" type="text" maxlength="4" style="text-align:right" autocomplete="off" />
         <span id="asearch" onclick="show_a_search();" style="font-size:7pt;margin-left:20px;" title="<?=_('Show advanced search'); ?>">[ <?=_('Advanced search'); ?> ]</span>
         <br />
@@ -93,7 +93,7 @@ require_once('classes/gettext.class.php');
   <center>
     <div style="clear:both;width:100%;">
       <span onclick="sorting();" style="position:absolute; right:3px;top:125px; z-index:9;">
-        <img id="sortlink" src="style/view-sort-ascending.png">
+        <img id="sortlink" src="styles/view-sort-ascending.png">
       </span>
       <div id="scontent" style="overflow:auto;padding: 20px; text-align:left; vertical-align:top;">
         <font style="font-size:8pt;">

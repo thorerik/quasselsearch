@@ -31,7 +31,7 @@
 
 
      function Request(divid,page)     {
-             //document.getElementById(divid).innerHTML = '<span id="load" style="display:none;position:absolute; top:5px;left:5px;z-index:99"><img src="style/loading.gif" style="border:1px solid black;"></span>';
+             //document.getElementById(divid).innerHTML = '<span id="load" style="display:none;position:absolute; top:5px;left:5px;z-index:99"><img src="styles/loading.gif" style="border:1px solid black;"></span>';
              new Ajax.Updater(divid, page, {asynchronous:true, evalScripts:true});}
 
 
@@ -43,7 +43,7 @@
             ary.push(document.getElementById('buffer').options[i].value);
         }     }
 
-             //document.getElementById('scontent').innerHTML = '<center><img src="style/loading.gif"></center>';
+             //document.getElementById('scontent').innerHTML = '<center><img src="styles/loading.gif"></center>';
              new Ajax.Updater('scontent', 'suche.php?search=1&string=' + encodeURIComponent(document.getElementById('input').value) + '&buffername=' + ary + '&number=' + document.getElementById('number').value + '&time_end=' + encodeURIComponent(document.getElementById('time_end').value) + '&time_start=' + encodeURIComponent(document.getElementById('time_start').value) + '&regexid=' + document.getElementById('regexid').checked + '&types=' + document.getElementById('types').checked + '&sorting=' + document.getElementById('sorting').checked, {asynchronous:true, evalScripts:true});
              document.cookie = 'saves=' + document.getElementById('regexid').checked +':'+ document.getElementById('types').checked +':'+ document.getElementById('sorting').checked;
              }
@@ -97,11 +97,11 @@
             if(document.getElementById('sorting').checked == true){
                 document.getElementById('sorting').checked=false;
                 such();
-                document.getElementById('sortlink').src="style/view-sort-ascending.png";
+                document.getElementById('sortlink').src="styles/view-sort-ascending.png";
             }else{
                 document.getElementById('sorting').checked=true;
                 such();
-                document.getElementById('sortlink').src="style/view-sort-descending.png";
+                document.getElementById('sortlink').src="styles/view-sort-descending.png";
         }}
 
       function close_more(messageid){
@@ -125,7 +125,7 @@
             document.getElementById('types').checked = saves[1];
             document.getElementById('sorting').checked = saves[2];
             if(saves[2] = true){
-                document.getElementById('sortlink').src="style/view-sort-descending.png";
+                document.getElementById('sortlink').src="styles/view-sort-descending.png";
                 }
             if(readCookie('saves') != 'false:true:true'){
                 show_a_search();

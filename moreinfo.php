@@ -34,7 +34,7 @@
   ?>
   <br>
   <a href="javascript:moreup('<?=$messageid?>','<?=$bufferid?>','<?=$up?>','<?=$types?>','<?=$sorting?>')">
-    <img style="float:left;" src="style/format-text-direction-rtl.png"> <?=_('more')?>
+    <img style="float:left;" src="styles/format-text-direction-rtl.png"> <?=_('more')?>
   </a>
   <div style="clear:left;" id="wantmore<?=$messageid?>">
     <?php
@@ -42,7 +42,7 @@
     ?>
   </div>
   <a href="javascript:moredown('<?=$messageid?>','<?=$bufferid?>','<?=$down?>','<?=$types?>','<?=$sorting?>')">
-    <img style="float:left;" src="style/format-text-direction-ltr.png"> <?=_('more')?>
+    <img style="float:left;" src="styles/format-text-direction-ltr.png"> <?=_('more')?>
   </a>
   <div style="clear:left;" id="wantmore<?=$messageid?>">
   </div>
